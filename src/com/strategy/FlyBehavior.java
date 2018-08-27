@@ -1,4 +1,4 @@
-package com.company;
+package com.strategy;
 
 public interface FlyBehavior {
     void fly();
