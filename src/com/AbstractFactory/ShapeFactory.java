@@ -1,7 +1,8 @@
-package com.factory;
+package com.AbstractFactory;
 
-public class ShapeFactory {
-    public  static Shape getShape(String shapeString){
+
+public class ShapeFactory extends AbstractFactory{
+    public  Shape getShape(String shapeString){
         if(shapeString == null){
             return null;
         }
@@ -11,6 +12,10 @@ public class ShapeFactory {
         if(shapeString.equalsIgnoreCase("RECTANGLE")){
             return new Rectangle();
         }
+        return null;
+    }
+
+    public  Color getColor(String color) {
         return null;
     }
 

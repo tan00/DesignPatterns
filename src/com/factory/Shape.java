@@ -1,5 +1,5 @@
 package com.factory;
 
-public interface shape {
+public interface Shape {
     void draw();
 }

@@ -3,9 +3,11 @@ package com.factory;
 public class FactoryPatternDemo {
 
     public  static void main(String[] args) {
-        shape shapeins =    ShapeFactory.getShape("circle");
+        Shape shape1 =    ShapeFactory.getShape("Circle");
+        Shape shape2 =    ShapeFactory.getShape("rectangle");
 
-        shapeins.draw();
+        shape1.draw();
+        shape2.draw();
 
     }
 
